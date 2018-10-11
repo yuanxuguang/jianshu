@@ -137,11 +137,9 @@ class posteController extends Controller
 
   //搜索
   public function search(){
-    $this->validate(request(),[
-        'query' => 'require',
-      ]);
-    $list = DB::table('posts')->where('')->get();
-    return view('post/search',compact($list));
+      $query = request('query');
+      $list = Post::where('title','like','%'.$query.'%')->get();
+      return view('post/search',compact('list','query'));
   }
   
   //zan

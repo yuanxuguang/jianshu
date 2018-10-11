@@ -42,6 +42,7 @@ Route::get('/posts/{post}/edit','posteController@edit');
 Route::put('/posts/{post}','posteController@update');
 Route::get('/posts/search','posteController@search');
 Route::any('/posts/delete/{id}','posteController@delete');
+    Route::any('/search','posteController@search');
 //图片上传
 Route::any('/posts/image/upload','posteController@imgupload');
 //专题
