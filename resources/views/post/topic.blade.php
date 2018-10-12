@@ -39,10 +39,10 @@
                 <div class="tab-pane active" id="tab_1">
                     @foreach($posts as $row)
                         <div class="blog-post" style="margin-top: 30px">
-                                                        <p class=""><a href="/user/$row->id">{{$row->user->name}}</a> 1个月前</p>
+                                                        <p class=""><a href="/user/$row->id">{{$row->user->name}}</a> </p>
                             <p class=""><a href="/posts/{{$row->id}}" >{{$row->title}}</a></p>
 
-                            <p>{!! $row->content !!}</p>
+                          <!--   <p>{!! $row->content !!}</p> -->
                         </div>
                     @endforeach
                 </div>
