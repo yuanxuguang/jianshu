@@ -22,10 +22,10 @@
                 <div class="tab-pane active" id="tab_1">
                     <div class="blog-post" style="margin-top: 30px">
                             @foreach($posts as $post)
-                            <p class=""><a href="/user/5">{{$post->user->name}}</a>{{$post->created_at}}</p>
+                           <!--  <p class=""><a href="/user/5">{{$post->user->name}}</a>{{$post->created_at}}</p> -->
                             <p class=""><a href="/posts/{{$post->id}}" >{{$post->title}}</a></p>
-                            <p><p>{!! str_limit($post->content,100,'....') !!}</p>
-                            @endforeach
+<!--                             <p>{!! str_limit($post->content,100,'....') !!}</p>
+ -->                            @endforeach
                         </div>                         
                     </div>
                 <!-- /.tab-pane -->
