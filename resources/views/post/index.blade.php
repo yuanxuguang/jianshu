@@ -42,7 +42,8 @@
     </div>
     @endforeach
     @endif
-       {{$posts->links()}}
+
+       {{ $posts->links() }}
     </div><!-- /.blog-main -->
     </div>
 @endsection
